@@ -1,0 +1,49 @@
+ body{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     display: block;
+ }
+nav{
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    overflow: auto;
+    margin-bottom: 25px;
+}
+nav img{
+    width: 18%;
+    float: left;
+    display: flex;
+    padding-left: 10px;
+}
+ nav ul{
+     list-style-type: none;
+ }
+nav ul li{
+    float: right;
+}
+ nav ul li a{
+     padding: 15px 15px;
+     text-decoration: none;
+     color: white;
+
+ }
+ nav ul li a:hover{
+     color: red;
+     background-color: white;
+     transition: 0.5s;
+ }
+
+.uvod{
+    padding-top: 40px;
+}
+
+.uvod h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.uvod p{
+    text-align: center;
+    font-size: 18px;
+}
