@@ -1,51 +1,112 @@
  body{
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: "Roboto", Helvetica, sans-serif;
      margin: 0;
      display: block;
  }
-nav{
-    width: 100%;
-    position: absolute;
-    background-color: black;
-    overflow: auto;
-    margin-bottom: 25px;
-    
-}
-
- nav ul{
+/*Navigace*/
+ nav ul {
      list-style-type: none;
-     
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #000000;
  }
-nav ul li{    
-    display: inline-block;
-    
-}
- nav ul li a{
-     padding: 15px 15px;
-     text-decoration: none;
+ nav li {
+     float: left;
+     padding-left: 20px;
+ }
+ nav li a {
+     display: block;
      color: white;
      text-align: center;
-
+     padding: 14px 16px;
+     text-decoration: none;
  }
- nav ul li a:hover{
-     color: red;
-     background-color: white;
-     transition: 0.5s;
+ nav li a:hover {
+     background-color: #ffffff;
+     color: black;
+     transition: 0.3s;
  }
 
-.uvod{
-    padding-top: 40px;
+ /* Úvodní sekce */
+ .uvod h1{
+     text-align: center;
+     font-size: 35px;
+ }
+ .uvod h3{
+     font-weight: 300;
+     text-align: center;
+ }
+ .uvod p{
+     text-align: center;
+     font-size: 18px;
+     font-weight: 15;
+     color: gray;
+ }
+
+ /* Hlavní obsah */
+ article{
+     margin: auto;
+     width: 85%;
+ }
+ article p{
+     line-height: 1.8;
+ }
+ aside {
+     width: 25%;
+     padding: 0 15px 0 15px;
+     margin: 0 15px 0 15px;
+     float: right;
+     background-color: #f0eeeb;
+     color: black;
+     border-radius: 15px;
+ }
+#cil_prace a{
+    text-decoration: none;
+    color: #01155c;
 }
 
-.uvod h1{
-    text-align: center;
-    font-size: 35px;
+.zdroje a{
+    text-decoration: none;
+    color: #01155c;
+}
+.zdroje a:hover{
+    color: red;
+    transition: 0.5s;
+}
+article #prakticka_cast, #teoreticka_cast{
+    padding-left: 40px;
 }
 
-.uvod p{
-    text-align: center;
-    font-size: 18px;
-}
+
+/* Footer */
+ footer{
+     width: 100%;
+     background-color: black;
+     padding: 10px;
+ }
+ footer p{
+     color: white;
+     margin-bottom: 0;
+     text-align: center;
+ }
+ footer a{
+     text-decoration: none;
+     color: #b80000;
+     font-weight: bold;
+ }
+/*Media Queris*/
+ @media screen and (max-width: 768px){
+     nav ul li{
+         float: none;
+     }
+     aside{
+         display: flex;
+         width: 100%;
+         float: none;
+         margin: auto;
+     }
+ }
 
 
 
