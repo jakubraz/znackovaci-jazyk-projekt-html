@@ -9,23 +9,22 @@ nav{
     background-color: black;
     overflow: auto;
     margin-bottom: 25px;
+    
 }
-nav img{
-    width: 18%;
-    float: left;
-    display: flex;
-    padding-left: 10px;
-}
+
  nav ul{
      list-style-type: none;
+     
  }
-nav ul li{
-    float: right;
+nav ul li{    
+    display: inline-block;
+    
 }
  nav ul li a{
      padding: 15px 15px;
      text-decoration: none;
      color: white;
+     text-align: center;
 
  }
  nav ul li a:hover{
@@ -47,3 +46,6 @@ nav ul li{
     text-align: center;
     font-size: 18px;
 }
+
+
+
